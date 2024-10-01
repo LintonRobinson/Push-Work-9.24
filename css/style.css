@@ -484,6 +484,9 @@ h1 {
 /* CORE FEATURES
 /*******************************************/
 
+.extra-padding {
+     height: 30px;
+}
 .core-features-section {
      overflow: hidden;
 }
@@ -491,6 +494,7 @@ h1 {
 
 .core-features-wrapper {
      position: relative;
+     top: -40px;
      background-color: white; 
      padding-bottom: 20px;
      
@@ -542,7 +546,7 @@ h1 {
      right: 0;
      bottom: -40px;
      background-color: rgb(255, 255, 255);
-     transform: skewY(-3deg);
+     transform: skewY(-2deg);
 } 
 
 /******************************************
