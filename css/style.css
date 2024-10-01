@@ -30,6 +30,10 @@ p {
      color: #8E919A;
 }
 
+.grid-card-1 > p {
+     margin: 0;
+}
+
 h2 {
      color: #131313;
      font-weight: 400; 
@@ -45,6 +49,11 @@ h4 {
      margin: 0;
      color: #131313 ;
 }
+
+.grid-card-1 > h4 {
+     margin: 0;
+}
+
 li,a {
      list-style: none;
      text-decoration: none !important;
@@ -92,6 +101,7 @@ header , .hero-section , .about-us-section , .solution-based-section , .how-does
 body {
      /* background: linear-gradient(rgb(18, 25, 42),rgb(21, 28, 47)); */
      background: linear-gradient(to right, #0E1424, #202a44);
+     
 }
 
 
@@ -455,7 +465,7 @@ h1 {
  .arrow {
      display: flex;
      background-color: white;
-     border: solid black 3px;
+     border: solid black 2px;
      width: 5px;
      height: 5px;
      padding: 15px;
@@ -463,11 +473,77 @@ h1 {
      justify-content: center;
      align-items: center;
  }
+
 .how-does-it-work-btn {
     display: flex;
     justify-content: center;
     margin: 90px 0 0 0 !important;
 }
+
+/******************************************
+/* CORE FEATURES
+/*******************************************/
+
+.core-features-section {
+     overflow: hidden;
+}
+
+
+.core-features-wrapper {
+     position: relative;
+     background-color: white; 
+     padding-bottom: 20px;
+     
+}
+
+.core-features-wrapper h3 , .core-features-wrapper h2 {
+     margin: 0;
+    
+}
+
+.grid-card-wrapper-1 {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 50px;
+     padding: 90px 0;
+     padding-bottom: 15px;
+}
+
+.grid-card-wrapper-2 {
+     display: grid;
+     position: relative;
+     right: 300px;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 50px;
+     padding: 15px 0;
+     padding-bottom: 90px;
+}
+
+.grid-card-1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     background-color: #ffffff;
+     border-radius: 10px;
+     padding: 30px;
+     width: 420px;
+     height: 210px;
+}
+
+.grid-card-1 div p {
+     margin: 5px;
+}
+
+.core-features-wrapper::after {
+     content: ' ';
+     height: 80px;
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: -40px;
+     background-color: rgb(255, 255, 255);
+     transform: skewY(-3deg);
+} 
 
 /******************************************
 /* ADDITIONAL STYLES
